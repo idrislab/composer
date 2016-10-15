@@ -33,6 +33,6 @@ RUN php -r "unlink('/tmp/composer-setup.php');"
 
 WORKDIR /src
 
-COPY entrypoint.sh /entrypoint.sh
+COPY docker_entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
